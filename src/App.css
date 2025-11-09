@@ -1,8 +1,18 @@
+.cover{
+  width: 100dvw;
+  height: 100dvh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg , rgb(20, 20, 20),rgb(50, 50, 50));
+  z-index: -1;
+}
+
+
 .top-image {
   grid-area: 1/1/6/6;
 background-position: center;
 background-size: cover;
-background-image: url('fp-action.jpg');
 /*clip-path: path("M 0,30 A 30,30 0,0,1 30,0 L 270,0 A 30,30 0,0,1 300,30 L 300,150 A 30,30 0,0,1 270,180 L 180,180 A 30,30 0,0,0 150,210 L 150,270 A 30,30 0,0,1 120,300 L 30,300 A 30,30 0,0,1 0,270 Z");*/
 clip-path: url(#image-cover);
 }
@@ -18,22 +28,22 @@ clip-path: url(#image-cover);
   }
 
   .slide:nth-child(1) {
-    background-image: url('fp-fire.jpg');
+    background-image: url('/fp-fire.jpg');
     animation-delay: 0s;
   }
 
   .slide:nth-child(2) {
-    background-image: url('fp-trash.jpg');
+    background-image: url('/fp-trash.jpg');
     animation-delay: 4s;
   }
 
   .slide:nth-child(3) {
-    background-image: url('fp-building.jpg');
+    background-image: url('/fp-building.jpg');
     animation-delay: 8s;
   }
 
   .slide:nth-child(4) {
-    background-image: url('fp-action');
+    background-image: url('/fp-action.jpg');
     animation-delay: 12s;
   }
 
@@ -56,8 +66,8 @@ font-size: clamp(16px,3vw,3vw);
 }
 .top-section{
   scroll-snap-align: center;
-  height: 93vh;
-  width: 98vw;
+  height: 93dvh;
+  width: 98dvw;
   margin: auto;
   display: grid;
   margin-bottom: 3vh;
@@ -70,8 +80,8 @@ svg{
   margin: 0;
 }
 .definitie{
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -88,8 +98,8 @@ svg{
 }
 .definitie h1::before{
   content: '';
-  width: 8vw;
-  height: 1.5vh;
+  width: 8dvw;
+  height: 1.5dvh;
   background-color:beige;
   position: absolute;
   top: 50%;
@@ -98,8 +108,8 @@ svg{
 }
 .definitie h1::after{
   content: '';
-  width: 8vw;
-  height: 1.5vh;
+  width: 8dvw;
+  height: 1.5dvh;
   background-color:beige;
   position: absolute;
   top: 50%;
@@ -107,7 +117,7 @@ svg{
   border-radius: 100%;
 }
 .definitie p{
-  width: 80vw;
+  width: 80dvw;
   font-size: clamp(20px,1.2vw,1.6vw);
 
  
@@ -120,5 +130,120 @@ svg{
   to{
     opacity: 1;
     scale: 1;
+  }
+}
+
+.Cauze{
+  width: 100dvw;
+  height: 100dvh;
+  scroll-snap-align: center;
+  position: relative;
+  display: flex;
+}
+.Carousel{
+  display: flex;
+  overflow-x: scroll;
+  width: 500vw;
+  scroll-snap-type:  x mandatory;
+    scrollbar-width: none;
+}
+.slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 90dvw;
+  scroll-snap-align: center;
+
+}
+.s1{
+margin-left: 10vw;
+}
+.s5{
+  margin-right: 10vw;
+}
+.subtitlu{
+  font-size: clamp(20px,2.4dvw,2.5rem);
+}
+.explicatie{
+  font-size: clamp(10px,1.7dvw,1.8rem);
+  
+}
+.cauze-titlu{
+  position: absolute;
+  text-align: center;
+  width: 20dvw;
+  top: 8%;
+  font-size: clamp(20px,3.2rem,100px);
+  left: 40dvw;
+}
+.cauze-titlu::before{
+  content: '';
+  width: 8dvw;
+  height: 1.5dvh;
+  background-color:beige;
+  position: absolute;
+  top: 50%;
+  right: 120%;
+  border-radius: 100%;
+}
+.cauze-titlu::after{
+  content: '';
+  width: 8dvw;
+  height: 1.5dvh;
+  background-color:beige;
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  border-radius: 100%;
+}
+.ind{
+  position: absolute;
+  top: 47%;
+  width: 4vw;
+  height: 4vw;
+  background-image: url("/arrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+border-radius: 100px;
+outline: none;
+border: none;
+background-color: rgba(0, 0, 0, 0);
+}
+.ind:hover{
+  scale: 1.2;
+}
+.ind:active{
+  scale: 1;
+}
+.ind-l{
+  left: 2%;
+}
+.ind-r{
+  right: 0;
+  transform: rotate(180deg);
+}
+@media  screen and (max-width:600px) {
+  .subtitlu{
+    margin-top: 90%;
+text-align: center;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+   
+  }
+  .explicatie{
+    height: 50%;
+    width: 60%;
+    font-size: medium;
+  }
+  .cauze-titlu{
+    left: 30%;
+  }
+  .cauze-titlu::after{
+    display: none;
+  }
+  .cauze-titlu::before{
+    display: none;
   }
 }
