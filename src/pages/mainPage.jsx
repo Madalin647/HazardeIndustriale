@@ -7,6 +7,12 @@ useEffect(()=>{
 },[])
 
 
+
+useEffect(()=>{
+  contentSelect(1)
+},[])
+
+
 return(
   <>
   <div className="cover"></div>
@@ -63,7 +69,56 @@ return(
 <button className="ind ind-l"></button>
 <button className="ind ind-r"></button>
   </section>
+  <section className="probleme-modalitati">
+    <div className="obj-select">
+      <div>
+<button className="select-button " onClick={()=>{contentSelect(1)}} >Probleme provocate</button>
+<div id="P-selected" className="selecter" hidden></div>
+      </div>
+<div>
+<button className="select-button " onClick={()=>{contentSelect(2)}} >Comabatere si prevenire</button>
+<div id="M-selected" className="selecter" hidden></div>
+</div>
+
+    </div>
+<div className=" pm-container" id="probleme" hidden>
+  <div className="content-probleme">
+<p>Poluarea aerului, apei si solului</p>
+<p>Afectarea sanatatii populatiei</p>
+<p>Distrugeri materiale</p>
+<p>Impact socio-economic</p>
+<p>Efecte de lunga durata asupra mediului</p>
+  </div>
+</div>
+<div className=" pm-container" id="modalitati" hidden>
+  <div className="content-modalitati">
+<p>Respectarea legislatiei si normelor de siguranta</p>
+<p>Monitorizarea permanenta a instalatiilor</p>
+<p>Planuri de urgenta si evacuare</p>
+<p>Depozitarea corecta a substantelor periculoase</p>
+<p>Tehnologii ecologice si modernizarea proceselor industriale</p>
+  </div>
+</div>
+  </section>
   </>
 )
   
 };
+
+function contentSelect(x){
+  const Probleme = document.getElementById('probleme')
+const Modalitati = document.getElementById('modalitati')
+  const pSelect = document.getElementById('P-selected')
+const mSelect = document.getElementById('M-selected')
+if (x == 1){
+  Probleme.removeAttribute('hidden')
+  Modalitati.setAttribute('hidden',true)
+pSelect.removeAttribute('hidden')
+  mSelect.setAttribute('hidden',true)
+}else if(x == 2){
+  Modalitati.removeAttribute('hidden')
+  Probleme.setAttribute('hidden',true)
+  mSelect.removeAttribute('hidden')
+  pSelect.setAttribute('hidden',true)
+}
+}

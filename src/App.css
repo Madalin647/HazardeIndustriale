@@ -247,3 +247,83 @@ text-align: center;
     display: none;
   }
 }
+.probleme-modalitati{
+  scroll-snap-align: center;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.obj-select{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 20dvh;
+  gap: 10%;
+  width: 100%;
+}
+
+.select-button{
+  background-color: rgba(240, 248, 255, 0);
+color: beige;
+height: 36%;
+border: none;
+font-size: clamp(20px,2rem,100px);
+font-weight: bold;
+position: relative;
+overflow: none;
+}
+.select-button::after{
+    content: '';
+  position: absolute;
+  top: 90%;
+  left: 0;
+  height: 6px;
+  width: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s ease;
+}
+
+.select-button:hover::after{
+   content: '';
+  position: absolute;
+  top: 90%;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.select-button:active::after{
+  background-color: aqua;
+}
+.pm-container{
+  top: 30%;
+  position: absolute;
+  width: 90%;
+  height: 60%;
+}
+.selecter{
+  width: 10px;
+  height: 10px;
+}
+.content-probleme,
+.content-modalitati{
+  display: flex;
+  height: 100%;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+border-radius: 30px;
+border: 2px solid beige;
+}
+.content-probleme p,
+.content-modalitati p{
+  width: 26vw;
+  height: 45%;
+  text-align: center;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
