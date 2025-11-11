@@ -100,6 +100,16 @@ return(
   </div>
 </div>
   </section>
+  <section className="exemple">
+    <div className="menu" id="menu" > <div className="positioner"><button onClick={()=>{hide()}}>Exemple</button>
+      </div></div>
+    <div className="player"><div className="vselect">
+      <button className="vsOption"> <img src="/Cernobyl.png" alt="" />Cernobyl </button>
+      <button className="vsOption"> <img src="/Bhopal.png" alt="" />Bhopal </button>
+      <button className="vsOption"> <img src="/Beirut.png" alt="" />Beirut </button>
+      <button className="vsOption"> <img src="/BaiaMare.png" alt="" />Baia Mare </button>
+      </div></div>
+  </section>
   </>
 )
   
@@ -122,3 +132,8 @@ pSelect.removeAttribute('hidden')
   pSelect.setAttribute('hidden',true)
 }
 }
+function hide(){
+      const menu = document.getElementById('menu');
+      menu.setAttribute('hidden',true);
+      console.log('hidden')
+    }

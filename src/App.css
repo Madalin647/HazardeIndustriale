@@ -90,6 +90,7 @@ svg{
     animation: aparition linear;
    animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  background: linear-gradient(0deg, rgb(12, 12, 12), rgba(255, 255, 255, 0) 100%);
 }
 .definitie h1{
   margin-top: 8%;
@@ -139,6 +140,7 @@ svg{
   scroll-snap-align: center;
   position: relative;
   display: flex;
+  background-color:rgb(12, 12, 12) ;
 }
 .Carousel{
   display: flex;
@@ -202,7 +204,7 @@ margin-left: 10vw;
   top: 47%;
   width: 4vw;
   height: 4vw;
-  background-image: url("/arrow.png");
+  background-image: url("/arrows.png");
   background-repeat: no-repeat;
   background-size: contain;
 border-radius: 100px;
@@ -254,6 +256,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   position: relative;
+ background-color:rgb(12, 12, 12) ;
 }
 .obj-select{
   display: flex;
@@ -326,4 +329,94 @@ border: 2px solid beige;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.exemple{
+  width: 100dvw;
+  height: 100dvh;
+  scroll-snap-align: center;
+position: relative;
+padding-top: 3%;
+    background:linear-gradient(180deg,rgb(12, 12, 12)10%,rgba(255, 255, 255, 0) )
+}
+.positioner{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu{
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  z-index: 2;
+  background-color:rgb(12, 12, 12);
+  position: relative;
+}
+.menu button{
+    font-size: 4dvw;
+    color: beige;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-weight: bold;
+    width: 30dvw;
+    transition: all 0.5s ease;
+}
+.menu button:hover{
+  scale: 1.2;
+}
+.menu button:active{
+  color: aqua;
+}
+.player{
+  margin: auto;
+width: 96dvw;
+height: 92dvh;
+border: 1px solid beige;
+border-radius: 20px;
+position: relative;
+display: flex;
+justify-content: end;
+align-items: center;
+}
+.vselect{
+  position: absolute;
+  width: 2%;
+  height: 34%;
+border-radius: 20px 0px 0px 20px;
+border-left: 1px solid beige;
+border-bottom: 1px solid beige;
+border-top: 1px solid beige;
+transition: all 0.5s ease;
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex-grow: 0;
+flex-shrink: 0;
+overflow-y: hidden;
+padding: 1%;
+scrollbar-width: none;
+}
+.vselect:hover{
+  width: 10%;
+}
+.vsOption{
+  width: 10vw;
+  height: 22%;
+  background-color: rgba(240, 248, 255, 0);
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+  justify-content: start;
+  align-items: center;
+  color: beige;
+  font-weight: bold;
+}
+.vsOption p{
+  width: 70%;
+  
+}
+.vsOption img{
+  width: 30%;
 }
