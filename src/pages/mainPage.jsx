@@ -165,7 +165,7 @@ mii de cazuri de cancer tiroidian si alte boli cauzate de radiatii</p>
   <div className="video-yt" id="VBhopal" hidden>
     <button className="video-close" onClick={()=>{
   videoCloseOpen('VBhopal','dBhopal')}}></button>
-<iframe className="video-css" width="100%" height="100%" src="https://www.youtube.com/embed/oKFupx9x0-k?si=EmWIKTqtfj1EGzw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+<iframe className="video-css" width="100%" height="100%" src="https://www.youtube.com/embed/bxdm3JlN3lM?si=kLgTTq4qcHWK54EA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
   </div>
   </div>
 
@@ -187,7 +187,7 @@ distrugerea a zeci de mii de cladiri si poluarea masiva a aerului</p>
   <div className="video-yt" id="VBeirut" hidden>
     <button className="video-close" onClick={()=>{
   videoCloseOpen('VBeirut','dBeirut')}}></button>
-<iframe className="video-css" width="100%" height="100%" src="https://www.youtube.com/embed/w8kwBAc_FrA?si=5cYyfUfX2WgYXD0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+<iframe className="video-css" width="100%" height="100%" src="https://www.youtube.com/embed/oKFupx9x0-k?si=EmWIKTqtfj1EGzw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
   </div>
   </div>
 
