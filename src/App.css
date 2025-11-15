@@ -595,3 +595,51 @@ transition: all 0.5s ease;
 .video-close:hover{
   scale: 1.2;
 }
+.concluzie{
+  width: 100dvw;
+  height: 100dvh;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.concluzie p{
+  width: 80%;
+   font-size: clamp(20px,1.2vw,1.6vw);
+}
+.concluzie h1{
+  text-align: center;
+  font-size: clamp(20px,3.2rem,100px);
+   position: relative;
+   display: inline;
+}
+.concluzie h1::before{
+  content: '';
+  width: 8dvw;
+  height: 1.5dvh;
+  background-color:beige;
+  position: absolute;
+  top: 50%;
+  right: 120%;
+  border-radius: 100%;
+}
+.concluzie h1::after{
+  content: '';
+  width: 8dvw;
+  height: 1.5dvh;
+  background-color:beige;
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  border-radius: 100%;
+}
+
+@media screen and (max-width:600px){
+    .concluzie h1::after{
+    display: none;
+  }
+  .concluzie h1::before{
+    display: none;
+  }
+}

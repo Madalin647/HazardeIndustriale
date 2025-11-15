@@ -218,6 +218,11 @@ distrugerea ecosistemelor acvatice si moartea in masa a pestilor</p>
 </div>
    
   </section>
+  <section className="concluzie">
+    <h1>Concluzie</h1>
+    <p>
+    Hazardele industriale reprezintă un risc major pentru oameni și mediu, fiind strâns legate de dezvoltarea tehnologică. De aceea, prevenirea și gestionarea lor responsabilă sunt esențiale pentru un mediu sigur și sustenabil.
+    </p></section>
   </>
 )
   
